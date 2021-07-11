@@ -1,7 +1,6 @@
 import vtooltip, { defaultOptions, state } from './directives/v-tooltip';
 import vclosepopover from './directives/v-close-popover';
 import Popover from './components/Popover.vue';
-import merge from 'lodash/merge';
 import 'vue-resize/dist/vue-resize.css';
 
 export { createTooltip, destroyTooltip } from './directives/v-tooltip';
@@ -11,8 +10,16 @@ export function install (Vue, options = {})
 	if (install.installed) return;
 	install.installed = true;
 
-	const finalOptions = {};
-	merge(finalOptions, defaultOptions, options);
+	const finalPopoverOptions = {
+		...defaultOptions.popover,
+		...(options?.popover || {})
+	};
+	
+	const finalOptions = {
+		...defaultOptions,
+		...(options || {}),
+		popover: finalPopoverOptions
+	};
 
 	plugin.options = finalOptions;
 	vtooltip.options = finalOptions;

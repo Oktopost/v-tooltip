@@ -22,7 +22,6 @@
   "unpkg": "dist/v-tooltip.min.js",
   "dependencies": {
     "@babel/runtime": "^7.13.10",
-    "lodash": "^4.17.21",
     "popper.js": "^1.16.1",
     "vue-resize": "^1.0.1"
   },
