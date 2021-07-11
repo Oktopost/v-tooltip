@@ -248,6 +248,7 @@ Or a reactive property:
 - `html` - Boolean: allow HTML tooltip content.
 - `delay` - Show/Hide delay, or object: `{ show: 500, hide: 100 }` (ms).
 - `placement` - *(see above)*
+- `smartTooltip` - show tooltip only when target truncated.
 - `trigger` - Events triggering the tooltip separated with spaces: `'hover'`, `'click'`, `'focus'` or `'manual'` (`'manual'` can't be combined with any other event).
 - `show` - Boolean to manually open or hide the tooltip.
 - `offset` - Offset of the position (px).

@@ -1,4 +1,6 @@
-import '@babel/polyfill'
+import '@babel/polyfill';
 
-global.SVGAnimatedString = () => {}
-global.SVGElement = () => {}
+global.SVGAnimatedString = () => 
+{};
+global.SVGElement = () => 
+{};
