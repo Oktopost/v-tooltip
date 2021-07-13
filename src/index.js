@@ -26,7 +26,7 @@ export function install (Vue, options = {})
 
 	Vue.directive('tooltip', vtooltip);
 	Vue.directive('close-popover', vclosepopover);
-	Vue.component('VPopover', Popover);
+	Vue.component('v-popover', Popover);
 }
 
 export const VTooltip = vtooltip;
