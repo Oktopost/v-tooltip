@@ -758,7 +758,7 @@ var Tooltip = /*#__PURE__*/function () {
           }
 
           if (options.smartTooltip) {
-            if (reference.clientWidth === reference.scrollWidth) {
+            if (reference.clientWidth === reference.scrollWidth && reference.clientHeight === reference.scrollHeight) {
               return;
             }
           }
